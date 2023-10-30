@@ -75,7 +75,7 @@ GEM
     bankai (0.13.1)
       rails (>= 7.0.0)
     bindex (0.8.1)
-    bootsnap (1.16.0)
+    bootsnap (1.17.0)
       msgpack (~> 1.2)
     brakeman (6.0.1)
     brow (0.4.1)
