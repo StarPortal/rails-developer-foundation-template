@@ -11,6 +11,7 @@ require 'shoulda'
 require 'shoulda/matchers'
 require 'faker'
 require 'factory_bot'
+require 'sidekiq/testing'
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
@@ -20,6 +21,7 @@ rescue ActiveRecord::PendingMigrationError => e
   puts e.to_s.strip
   exit 1
 end
+
 RSpec.configure do |config|
   config.fixture_path = Rails.root.join('spec/fixtures')
 

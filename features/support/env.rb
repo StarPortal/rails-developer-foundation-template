@@ -12,9 +12,14 @@ if ENV.fetch('COVERAGE', false) || ENV.fetch('CI', false)
 end
 
 require 'cucumber/rails'
+require 'sidekiq/testing'
 
 ActionController::Base.allow_rescue = false
 ActiveSupport::TestCase.file_fixture_path = Rails.root.join('features/support/files')
+
 DatabaseRewinder.strategy = :transaction
+
 Cucumber::Rails::Database.javascript_strategy = :none
 Capybara.javascript_driver = :selenium_chrome_headless
+
+Sidekiq::Testing.inline!
