@@ -64,7 +64,7 @@ group :development, :test do
 
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
-  gem 'rubocop', '~> 1.66.1', require: false
+  gem 'rubocop', '~> 1.67.0', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
