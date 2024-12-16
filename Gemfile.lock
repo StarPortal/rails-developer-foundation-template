@@ -313,7 +313,7 @@ GEM
       rspec-mocks (~> 3.13)
       rspec-support (~> 3.13)
     rspec-support (3.13.1)
-    rubocop (1.69.1)
+    rubocop (1.69.2)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -435,7 +435,7 @@ DEPENDENCIES
   redis (~> 5.3)
   rspec
   rspec-rails
-  rubocop (~> 1.69.1)
+  rubocop (~> 1.69.2)
   rubocop-performance
   rubocop-rails
   rubocop-rspec
